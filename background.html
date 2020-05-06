@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <style>
+            .button {
+                background-color: transparent;
+                border: 1px solid grey;
+                color: grey;
+                position:absolute;
+                left: 45%;
+                top:45%;
+                border-radius: 5px;
+                padding: 8px 15px;
+                text-align: center;
+                font-size: 16px;
+                transition-duration:0.3s;
+                font-family: "Calibri";
+            }
+
+            .button:hover {
+                color:white;
+                border:1px solid grey;
+                background-color:grey;
+            }
+
+        </style>
+
+        <script>
+            function color(){
+                var randomColor =  Math.floor(Math.random()*16777215).toString(16);
+                document.body.style.backgroundColor = "#" + randomColor;
+            }
+        </script>
+    </head>
+
+    <body>
+        <button type="button" onclick="color()" class="button">Click Me!</button>
+    </body>
+
+</html>
